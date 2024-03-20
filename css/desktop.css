@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+}
+
+.container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* WCB Baker 부분 */
+.hero {
+    background-image: url("../images/bread1.jpg");
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.title {
+    font-family: 'Dancing Script',cursive;
+    font-size: 7rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width:700px) {
+    .title {
+        font-family: 'Dancing Script',cursive;
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.menu {
+    background-image: url("../images/bread2.jpg");
+    text-align: left;
+    padding-left: 10vh;
+    position: relative;
+}
+
+.menu-con {
+    position: absolute;
+    top: 10vh;
+}
+
+.menu-list dl {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contact {
+    background-image: url("../images/cafe.jpg");
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.question {
+    text-decoration: none;
+    background: #555;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 3.5rem;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 2rem 0 2.25rem;
+}
+
+.question:hover {
+    background: #171717;
+    cursor: pointer;
+}
+
+.contact-sns {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-sns a {
+    color: #555;
+
+}
+
+.contact-sns a:hover {
+    color: white;
+}
+
+.contact-sns a i {
+    font-size: 2rem;
+}
+
+.contact-sns > a  {
+    background-color: white;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.contact-sns > a:hover {
+    background-color: black;
+    border-radius: 50%;
+    padding: 1rem;
+}
